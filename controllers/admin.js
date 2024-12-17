@@ -16,7 +16,7 @@ exports.getAdminStats = async (req, res, next) => {
     const orders = await Order.find(); // Dùng populate nếu cần lấy thông tin user
     res.status(200).json({
       orders,
-      user: req.session.user,
+      user: req.user,
       ordersCount,
       usersCount,
     });
