@@ -33,7 +33,7 @@ const io = socketIo(server, {
   cors: {
     origin: [
       "https://assignment3-node-js.vercel.app",
-      "https://nonononame12.github.io",
+      "https://assignment3-admin-node-js.vercel.app",
     ], // Client and Admin origins
     methods: ["GET", "POST"],
     credentials: true, // Nếu cần xác thực
@@ -130,7 +130,7 @@ app.use(cookieParser());
 
 const allowedOrigins = [
   "https://assignment3-node-js.vercel.app",
-  "https://nonononame12.github.io", // URL frontend React
+  "https://assignment3-admin-node-js.vercel.app", // URL frontend React
 ];
 
 app.use(
