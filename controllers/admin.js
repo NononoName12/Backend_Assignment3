@@ -234,27 +234,27 @@ exports.postAddProduct = async (req, res, next) => {
   if (files[0])
     productImages.img1 = files[0].path.replace(
       /^.*[\\\/]uploads[\\\/]/,
-      "http://localhost:5000/uploads/"
+      "https://backend-assignment3-odn0.onrender.com/uploads/"
     );
   if (files[1])
     productImages.img2 = files[1].path.replace(
       /^.*[\\\/]uploads[\\\/]/,
-      "http://localhost:5000/uploads/"
+      "https://backend-assignment3-odn0.onrender.com/uploads/"
     );
   if (files[2])
     productImages.img3 = files[2].path.replace(
       /^.*[\\\/]uploads[\\\/]/,
-      "http://localhost:5000/uploads/"
+      "https://backend-assignment3-odn0.onrender.com/uploads/"
     );
   if (files[3])
     productImages.img4 = files[3].path.replace(
       /^.*[\\\/]uploads[\\\/]/,
-      "http://localhost:5000/uploads/"
+      "https://backend-assignment3-odn0.onrender.com/uploads/"
     );
   if (files[4])
     productImages.img5 = files[4].path.replace(
       /^.*[\\\/]uploads[\\\/]/,
-      "http://localhost:5000/uploads/"
+      "https://backend-assignment3-odn0.onrender.com/uploads/"
     );
 
   try {
